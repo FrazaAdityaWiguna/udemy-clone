@@ -5,7 +5,7 @@ import { GiTemporaryShield } from 'react-icons/gi';
 import { TiBatteryHigh } from 'react-icons/ti';
 import logo from '../ui/udemy.svg';
 
-function sidebar() {
+function Sidebar() {
   const [navs, setNav] = useState([
     { label: 'Home', slug: '/', icon: <ImHome /> },
     { label: 'Discover', slug: 'discover', icon: <ImList /> },
@@ -31,7 +31,7 @@ function sidebar() {
   ));
 
   return (
-    <div className="sidebar fixed">
+    <div className="sidebar rel">
       <a href="#up" className="logo bl">
         <img src={logo} alt="logo" className="bl" />
       </a>
@@ -77,4 +77,4 @@ function sidebar() {
   );
 }
 
-export default sidebar;
+export default Sidebar;
